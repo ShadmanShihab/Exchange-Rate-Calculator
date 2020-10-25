@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Converter</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="description">
+                <h1>Exchange Rate Calculator</h1>
+                <p>Choose the currency and the amounts to get the exchange rate</p>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="first"> 
+                <select name="" id="first_currency" class="select-menu">
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="UYU">UYU</option>
+                    <option value="VND">VND</option>
+                    <option value="ZAR">ZAR</option>
+                </select>
+
+                <input type="number" id="first_amount" class="value-field" value="1" placeholder="0">
+            </div>
+
+
+            <div class="second">
+                
+                <select name="" id="second_currency" class="select-menu">
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="UYU">UYU</option>
+                    <option value="VND">VND</option>
+                    <option value="ZAR" selected>ZAR</option>
+                </select>
+
+                <input type="number" id="second_amount" class="value-field" value="1" placeholder="0">
+            </div>
+
+            <div class="exchange">
+                <div id="rate" class="rate-text">
+                    <!-- Rate here -->
+                    1 USD = 16.198254 ZAR
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

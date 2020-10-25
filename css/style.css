@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  margin: 0;
+  padding: 0; }
+
+.top {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(../img/image3.jpg);
+  background-size: cover;
+  background-position: center; }
+  .top .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .top .description h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 2rem;
+      font-size: 30px;
+      font-weight: 200; }
+      @media only screen and (max-width: 1000px) {
+        .top .description h1 {
+          font-size: 20px; } }
+      @media only screen and (max-width: 600px) {
+        .top .description h1 {
+          font-size: 15px; } }
+    .top .description p {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 18px; }
+      @media only screen and (max-width: 1000px) {
+        .top .description p {
+          font-size: 14px; } }
+      @media only screen and (max-width: 600px) {
+        .top .description p {
+          font-size: 10px; } }
+
+.bottom {
+  display: grid;
+  width: 100vw;
+  height: 50vh;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #f7f7f7da; }
+  .bottom .first {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .bottom .exchange {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .bottom .second {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .bottom .select-menu {
+    width: 4rem;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s; }
+    @media only screen and (max-width: 1000px) {
+      .bottom .select-menu {
+        font-size: 15px;
+        width: 90px;
+        height: 38px; } }
+    @media only screen and (max-width: 600px) {
+      .bottom .select-menu {
+        font-size: 10px;
+        width: 70px;
+        height: 30px; } }
+
+.value-field {
+  border: 1px solid #ad2323;
+  background-color: #fff;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: border 0.3s;
+  width: 100px;
+  height: 44px;
+  font-size: 18px; }
+  @media only screen and (max-width: 1000px) {
+    .value-field {
+      font-size: 15px;
+      width: 90px;
+      height: 38px; } }
+  @media only screen and (max-width: 600px) {
+    .value-field {
+      font-size: 10px;
+      width: 70px;
+      height: 30px; } }
+
+.exchange .rate-text {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+  font-size: 18px; }
+  @media only screen and (max-width: 1000px) {
+    .exchange .rate-text {
+      font-size: 15px;
+      padding: 0.6rem; } }
+  @media only screen and (max-width: 600px) {
+    .exchange .rate-text {
+      font-size: 10px;
+      padding: 0.4rem; } }
